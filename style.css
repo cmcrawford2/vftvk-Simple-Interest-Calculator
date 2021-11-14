@@ -1,4 +1,48 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+  background-color: black;
+  font-family: arial;
+  color: white;
+}
 
+h1 {
+  color:grey;
+  font-family: verdana;
+}
 
+/* align:center did not work, use auto for L and R margins */
+/* Also use line-height instead of <br/> */
+.maindiv {
+  background-color: white;
+  color: black;
+  width: 500px;
+  padding: 20px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 36px;
+}
+
+/* Added this to center inputs inside the box */
+.innerdiv {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Added this to line everything up */
+.innerdiv span, input {
+  vertical-align: middle;
+}
+
+/* Added this so the inputs would like up horizontally */
+#label {
+  display: inline-block;
+  width: 100px;
+}
+
+/* Override above formatting, and adjust vertical spacing */
+#result {
+  margin-top: 10px;
+  margin-bottom: 0;
+  line-height: 18px;
+}
